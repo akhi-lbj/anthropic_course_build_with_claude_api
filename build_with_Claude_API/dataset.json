@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket/path/to/object') and extract just the bucket name",
+    "format": "regex"
+  },
+  {
+    "task": "Create a JSON CloudFormation template snippet that defines an AWS Lambda function with basic properties including function name, runtime (Python 3.11), and a placeholder IAM role ARN",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that takes an AWS EC2 instance ID as input and returns True if it matches the valid AWS instance ID format (i-followed by 8 or 17 hexadecimal characters)",
+    "format": "python"
+  }
+]
