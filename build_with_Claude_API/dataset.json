@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket/path/to/object') and extract just the bucket name",
-    "format": "regex"
+    "task": "Create an IAM policy JSON that allows an EC2 instance to read objects from a specific S3 bucket named 'my-data-bucket'",
+    "format": "json",
+    "solution_criteria": "Must include correct IAM policy structure with Version, Statement array, Effect, Action (s3:GetObject), and Resource ARN pointing to the specific bucket"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an AWS Lambda function with basic properties including function name, runtime (Python 3.11), and a placeholder IAM role ARN",
-    "format": "json"
+    "task": "Write a Python function that takes an AWS CloudWatch log event and extracts the log message and timestamp",
+    "format": "python",
+    "solution_criteria": "Must parse the CloudWatch Logs event structure, extract 'message' and 'timestamp' fields from the log data, and return them as a dictionary"
   },
   {
-    "task": "Write a Python function that takes an AWS EC2 instance ID as input and returns True if it matches the valid AWS instance ID format (i-followed by 8 or 17 hexadecimal characters)",
-    "format": "python"
+    "task": "Create a regular expression to validate AWS S3 bucket names according to AWS naming rules (lowercase letters, numbers, hyphens, 3-63 characters)",
+    "format": "regex",
+    "solution_criteria": "Must enforce lowercase alphanumeric and hyphen characters only, enforce 3-63 character length, and not allow starting or ending with hyphens"
   }
 ]
