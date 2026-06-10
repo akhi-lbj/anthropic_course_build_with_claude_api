@@ -1,0 +1,22 @@
+[
+  {
+    "output": "# One-Day Meal Plan for Marathon Race Preparation\n\nHere is a one-day carb-loading meal plan for an athlete preparing for a marathon:\n\n* **Calorie Target:** Approximately 3,200 calories\n* **Macronutrient Breakdown:** Protein (120g), Fat (85g), Carbs (520g)\n\n## Meal Plan:\n\n* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), honey (25g), and whole milk (250g). Toast with almond butter (20g).\n    * Protein: 18g, Fat: 12g, Carbs: 95g\n\n* **Mid-Morning Snack (10:00 AM):** Bagel (90g) with jam (30g) and low-fat cream cheese (20g). Orange juice (250ml).\n    * Protein: 10g, Fat: 5g, Carbs: 75g\n\n* **Lunch (1:00 PM):** Pasta (120g cooked) with lean ground turkey (150g), marinara sauce (150g), and grated Parmesan (15g). Side salad with olive oil dressing (15ml).\n    * Protein: 38g, Fat: 15g, Carbs: 85g\n\n* **Afternoon Snack (4:00 PM):** Rice cakes (40g) with peanut butter (25g) and honey (20g). Apple (180g).\n    * Protein: 10g, Fat: 12g, Carbs: 80g\n\n* **Dinner (7:00 PM):** Grilled chicken breast (160g) with white rice (150g cooked), steamed carrots (150g), and olive oil (10ml).\n    * Protein: 32g, Fat: 15g, Carbs: 95g\n\n* **Evening Snack (9:30 PM):** Sports drink (500ml) with a granola bar (50g).\n    * Protein: 12g, Fat: 8g, Carbs: 90g\n\nThis meal plan emphasizes high-quality carbohydrates to maximize glycogen storage, includes adequate protein for muscle recovery and repair, and provides sufficient calories to fuel endurance training and race preparation.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "75 kg",
+        "goal": "Marathon race preparation with carb-loading for peak endurance performance",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan totals 3500+ calories with carbohydrate-dominant macronutrient ratio (60%+ carbs) suitable for endurance athlete",
+        "Includes 4-5 meals/snacks distributed throughout the day with timing appropriate for training and recovery",
+        "All meals are compact and concise (brief descriptions, not lengthy recipes)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) who needs carb-loading with specific caloric targets (3500+ calories) and macronutrient ratios for peak performance"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meals with portions and timing. However, it fails to meet the secondary criterion of 3,500+ calories, providing only 3,200 calories. While the carbohydrate ratio (65%) exceeds the 60% threshold and meals are reasonably concise, the caloric shortfall is a material deficiency for an endurance athlete's carb-loading protocol. The solution is well-structured and functional but falls short of the specified performance target."
+  }
+]

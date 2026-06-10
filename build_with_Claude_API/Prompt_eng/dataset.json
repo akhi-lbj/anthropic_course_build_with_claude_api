@@ -1,0 +1,17 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "75 kg",
+      "goal": "Marathon race preparation with carb-loading for peak endurance performance",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3500+ calories with carbohydrate-dominant macronutrient ratio (60%+ carbs) suitable for endurance athlete",
+      "Includes 4-5 meals/snacks distributed throughout the day with timing appropriate for training and recovery",
+      "All meals are compact and concise (brief descriptions, not lengthy recipes)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) who needs carb-loading with specific caloric targets (3500+ calories) and macronutrient ratios for peak performance"
+  }
+]
