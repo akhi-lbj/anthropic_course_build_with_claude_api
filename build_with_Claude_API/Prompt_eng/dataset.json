@@ -1,17 +1,62 @@
 [
   {
     "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "75 kg",
-      "goal": "Marathon race preparation with carb-loading for peak endurance performance",
-      "restrictions": "None"
+      "content": "The modernist rejection of Victorian sentimentality fundamentally transformed literary aesthetics, yet this rupture paradoxically retained the very humanistic concerns it ostensibly abandoned. Eliot's fragmented verse technique, often read as a formal rejection of narrative coherence, arguably deepens rather than diminishes ethical engagement with consciousness itself. Similarly, the stream-of-consciousness innovations pioneered by Joyce and Woolf, while celebrated for their technical virtuosity, implicitly grapple with questions of moral responsibility and the nature of authentic selfhood\u2014concerns that link them philosophically to existentialist thought emerging contemporaneously in Continental philosophy. The critical tendency to emphasize modernism's aesthetic autonomy obscures how these formal experiments constitute a sustained meditation on authenticity, alienation, and the possibility of meaningful human connection in an increasingly fragmented world."
     },
     "solution_criteria": [
-      "Meal plan totals 3500+ calories with carbohydrate-dominant macronutrient ratio (60%+ carbs) suitable for endurance athlete",
-      "Includes 4-5 meals/snacks distributed throughout the day with timing appropriate for training and recovery",
-      "All meals are compact and concise (brief descriptions, not lengthy recipes)"
+      "Extracts both explicit topics (modernism, literary techniques, named authors) and implicit themes requiring inference (ethics, authenticity, consciousness, existentialism, alienation)",
+      "Distinguishes main topics from secondary examples or illustrations",
+      "Returns results as a valid JSON array of strings"
     ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) who needs carb-loading with specific caloric targets (3500+ calories) and macronutrient ratios for peak performance"
+    "task_description": "Extract topics from a passage of text from a scholarly journal into a JSON Array of Strings",
+    "scenario": "Testing with a humanities passage containing implicit themes (philosophy, ethics, literature criticism) that require inference to identify main topics versus explicit mentions"
+  },
+  {
+    "prompt_inputs": {
+      "content": "We present a novel approach for solving the Schr\u00f6dinger equation using variational quantum eigensolver (VQE) algorithms implemented on near-term intermediate-scale quantum (NISQ) devices. Our method leverages the ansatz-based parametrization with hardware-efficient circuits to minimize the molecular Hamiltonian H = \u03a3\u1d62\u2c7cC\u1d62\u2c7c\u03c3\u1d62\u03c3\u2c7c + \u03a3\u1d62h\u1d62\u03c3\u1d62. We employed the simultaneous perturbational stochastic approximation (SPSA) optimizer combined with error mitigation techniques including zero-noise extrapolation (ZNE) and probabilistic error cancellation (PEC) to suppress the effects of decoherence and gate infidelities on IBM Quantum and IonQ platforms. Benchmarking against classical coupled-cluster singles and doubles (CCSD) methods demonstrates a 40% reduction in circuit depth while maintaining chemical accuracy within 1 mHartree for small molecules. Our implementation of dynamical decoupling sequences and dynamical circuit techniques further reduces noise accumulation by 60%, enabling practical applications in quantum chemistry simulation and materials discovery."
+    },
+    "solution_criteria": [
+      "Extracts all major technical concepts, algorithms, and methodologies (e.g., VQE, NISQ, SPSA, ZNE, PEC, CCSD, dynamical decoupling)",
+      "Includes domain-specific acronyms and specialized terminology accurately represented",
+      "Returns results as a valid JSON Array of Strings with no additional fields or formatting"
+    ],
+    "task_description": "Extract topics from a passage of text from a scholarly journal into a JSON Array of Strings",
+    "scenario": "Testing with a highly technical STEM abstract containing domain-specific jargon, mathematical notation, and acronyms to ensure accurate extraction of specialized concepts"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in cognitive neuroscience have leveraged hierarchical Bayesian modeling to understand how the prefrontal cortex integrates probabilistic information during decision-making tasks. Using functional MRI data from 127 participants, we employed multilevel regression analysis to examine the relationship between individual differences in risk aversion and activation patterns in the anterior insula and dorsolateral prefrontal cortex. Our findings suggest that Bayesian updating mechanisms in the brain correlate with behavioral measures of uncertainty tolerance, with effect sizes ranging from r = 0.34 to r = 0.58 across regions of interest. These results bridge computational psychology and systems neuroscience, demonstrating how statistical learning principles manifest in neural circuitry and influence economic choice behavior."
+    },
+    "solution_criteria": [
+      "Identifies topics spanning psychology, neuroscience, and statistics domains (e.g., decision-making, prefrontal cortex, Bayesian modeling, regression analysis)",
+      "Includes both overarching topics and domain-specific technical topics",
+      "Returns results as a JSON array of strings with no additional formatting or explanations"
+    ],
+    "task_description": "Extract topics from a passage of text from a scholarly journal into a JSON Array of Strings",
+    "scenario": "Testing with an interdisciplinary passage mixing multiple fields (psychology, neuroscience, statistics) to verify correct topic identification across domain boundaries"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent advances in machine learning have revolutionized natural language processing through the development of transformer architectures, which employ multi-head attention mechanisms to capture contextual relationships in text. Within this broader framework, named entity recognition systems have achieved state-of-the-art performance by leveraging pre-trained language models such as BERT, while semantic role labeling has benefited from hierarchical neural networks that distinguish between predicate arguments and adjuncts. Additionally, transfer learning approaches have enabled rapid adaptation of these models to domain-specific applications, particularly in biomedical text mining where entity extraction must identify protein interactions, gene sequences, and disease nomenclature simultaneously."
+    },
+    "solution_criteria": [
+      "Extracts both primary topics (machine learning, natural language processing) and secondary specialized areas (transformer architectures, named entity recognition, semantic role labeling, transfer learning, biomedical text mining)",
+      "Returns output as a JSON array of strings",
+      "Captures nested concepts and their relationships without redundancy"
+    ],
+    "task_description": "Extract topics from a passage of text from a scholarly journal into a JSON Array of Strings",
+    "scenario": "Testing with a passage containing subtopics and nested concepts to assess whether the extraction captures both primary subjects and secondary specialized areas appropriately"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the interplay between epigenetic modifications and neuroplasticity in the context of memory consolidation during sleep. We employed chromatin immunoprecipitation coupled with RNA sequencing to analyze histone acetylation patterns in the hippocampus of mice during rapid eye movement sleep, revealing dynamic H3K9ac enrichment at promoters of immediate early genes involved in synaptic potentiation. Concurrent two-photon calcium imaging demonstrated that these chromatin remodeling events correlate with spontaneous reactivation of place cell ensembles, suggesting a mechanistic link between epigenetic regulation and systems-level memory replay. Our findings indicate that histone deacetylase inhibitors enhance memory retention through amplification of sleep-dependent gene expression programs, implicating chromatin plasticity as a critical substrate for long-term memory formation."
+    },
+    "solution_criteria": [
+      "Extracts all major scientific topics without omission (epigenetics, neuroplasticity, memory consolidation, sleep, chromatin modification, etc.)",
+      "Returns output as a valid JSON array of strings",
+      "Avoids redundant or near-duplicate topics"
+    ],
+    "task_description": "Extract topics from a passage of text from a scholarly journal into a JSON Array of Strings",
+    "scenario": "Testing with a brief, dense abstract using minimal redundancy and maximum conceptual density to evaluate topic extraction performance on tightly-written scholarly content"
   }
 ]
